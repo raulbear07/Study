@@ -4,8 +4,8 @@ import java.util.List;
 
 public interface IBaseDao<T> {
     int save( T t);
-    void delete();
-    void update(T t);
+    //void delete();
+    //oid update(T t);
     T findById(long id);
-    List<T> findAll();
+    //List<T> findAll();
 }

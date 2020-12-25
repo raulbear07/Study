@@ -1,6 +1,9 @@
 package rr.com.springmvc.service;
 
+import rr.com.springmvc.pojo.RedPacket;
+
 public interface RedPacketService {
-    public int grapRedPacket(Long redPacketId,Long userId);
-    //public int gradRe
+    public RedPacket getRedPacket(Long id);
+    public int decreaseRedPacket(Long id);
+
 }
