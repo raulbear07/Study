@@ -38,7 +38,7 @@ public class RootConfig implements TransactionManagementConfigurer {
         props.setProperty("driverClassName", "com.mysql.jdbc.Driver");
         props.setProperty("url", "jdbc:mysql://localhost:3306/chapter22");
         props.setProperty("username", "root");
-        props.setProperty("password", "123456");
+        props.setProperty("password", "!QAZ2wsx");
         props.setProperty("maxActive", "200");
         props.setProperty("maxIdle", "20");
         props.setProperty("maxWait", "30000");
@@ -50,7 +50,7 @@ public class RootConfig implements TransactionManagementConfigurer {
         }
         return dataSource;
     }
-    @Bean("sqlSessionFactory")
+    @Bean(name="sqlSessionFactory")
     public SqlSessionFactoryBean initSqlSessionFactory(){
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(initDataSource());

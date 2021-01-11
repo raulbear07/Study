@@ -18,7 +18,7 @@
 
 	<!-- 查询红包具体信息 -->
 	<select id="getRedPacketForUpdate" parameterType="long"
-			resultType="com.ssm.chapter22.pojo.RedPacket">
+			resultType="rr.com.springmvc.pojo.RedPacket">
 		select id, user_id as userId, amount, send_date as
 		sendDate, total,
 		unit_amount as unitAmount, stock, version, note

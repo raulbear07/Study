@@ -17,7 +17,7 @@
                 $.post({
                     //请求抢id为1的红包
                     //根据自己请求修改对应的url和大红包编号
-                    url: "./userRedPacket/grapRedPacketByRedis.do?redPacketId=8&userId=" + i,
+                    url: "./userRedPacket/grapRedPacketForVersion.do?redPacketId=8&userId=" + i,
                     //成功后的方法
                     success: function (result) {
                     }

@@ -4,8 +4,8 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <mappers>
-        <mapper resource="rr.com.springmvc.mapper.UserRedPacket.xml"/>
-        <mapper resource="rr.com.springmvc.mapper.RedPacket.xml"/>
+        <mapper resource="rr/com/springmvc/mapper/UserRedPacketDao.xml"/>
+        <mapper resource="rr/com/springmvc/mapper/RedPacketDao.xml"/>
 
     </mappers>
 </configuration>
